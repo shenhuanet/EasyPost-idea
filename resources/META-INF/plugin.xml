@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>com.shenhua.idea.plugin.postman</id>
+  <id>com.shenhua.idea.plugin.easypost</id>
   <name>PostMan</name>
   <version>1.0</version>
   <vendor email="shenhuanet@126.com" url="http://www.shenhuanet.com">ShenhuaTech</vendor>
@@ -28,8 +28,8 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="MainAciton" class="com.shenhua.idea.plugin.postman.MainAcition" text="MainAciton"
-            description="MainAciton"/>
+    <action id="MainAction" class="com.shenhua.idea.plugin.easypost.MainAction" text="MainAction"
+            description="MainAction"/>
   </actions>
 
 </idea-plugin>

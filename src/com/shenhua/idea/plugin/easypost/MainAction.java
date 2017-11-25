@@ -1,4 +1,4 @@
-package com.shenhua.idea.plugin.postman;
+package com.shenhua.idea.plugin.easypost;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -9,7 +9,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
  * @author shenhua
  *         Email shenhuanet@126.com
  */
-public class MainAcition extends AnAction {
+public class MainAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
