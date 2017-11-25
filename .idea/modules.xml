@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PostMan-idea.iml" filepath="$PROJECT_DIR$/PostMan-idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EasyPost-idea.iml" filepath="$PROJECT_DIR$/EasyPost-idea.iml" />
     </modules>
   </component>
 </project>
