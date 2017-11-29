@@ -41,38 +41,38 @@
         <group id="EasyPost.LeftToolbarGroup" popup="false">
             <action id="EasyPost.AddTabAction"
                     class="com.shenhua.idea.plugin.easypost.actions.AddTabAction"
-                    text="AddTabAction"
+                    text="Add Tab"
                     description="Add a new tab content"
                     icon="/general/add.png">
             </action>
             <action id="EasyPost.CloseAction"
                     class="com.shenhua.idea.plugin.easypost.actions.CloseTabAction"
-                    text="CloseAction"
+                    text="Close Tab"
                     description="Close current tab"
                     icon="/actions/exclude.png">
             </action>
             <action id="EasyPost.HistoryAction"
                     class="com.shenhua.idea.plugin.easypost.actions.HistoryAction"
-                    text="HistoryAction"
+                    text="History"
                     description="Show the operating history"
                     icon="/vcs/history.png">
             </action>
             <action id="EasyPost.SettingAction"
                     class="com.shenhua.idea.plugin.easypost.actions.SettingAction"
-                    text="SettingAction"
+                    text="Setting"
                     description="Go to settings"
                     icon="/general/secondaryGroup.png">
             </action>
             <action id="EasyPost.HelpAction"
                     class="com.shenhua.idea.plugin.easypost.actions.HelpAction"
-                    text="HelpAction"
+                    text="Help"
                     description="Show the help"
                     icon="/actions/help.png">
             </action>
             <action id="EasyPost.CloseContextAction"
                     class="com.intellij.execution.ui.layout.actions.CloseViewAction"
-                    text="CloseActiveTabAction"
-                    description="Close the content"
+                    text="Close Window"
+                    description="Close the content window"
                     icon="/actions/cancel.png">
             </action>
         </group>
@@ -80,20 +80,20 @@
         <group id="EasyPost.HistoryGroup" popup="false">
             <action id="EasyPost.History.RemoveAction"
                     class="com.shenhua.idea.plugin.easypost.actions.history.RemoveAction"
-                    text="RemoveAction"
+                    text="Remove"
                     description="Remove the selected record"
                     icon="/actions/exclude.png">
             </action>
             <action id="EasyPost.History.CleanAction"
                     class="com.shenhua.idea.plugin.easypost.actions.history.CleanAction"
-                    text="CleanAction"
+                    text="Clean All"
                     description="Clean all the history records"
                     icon="/actions/gc.png">
             </action>
             <action id="EasyPost.History.CloseAction"
                     class="com.shenhua.idea.plugin.easypost.actions.history.CloseHistoryAction"
-                    text="CloseHistoryAction"
-                    description="Close the history tab"
+                    text="Close Window"
+                    description="Close the history window"
                     icon="/actions/cancel.png">
             </action>
         </group>
