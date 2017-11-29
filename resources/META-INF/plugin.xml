@@ -1,35 +1,59 @@
 <idea-plugin>
-  <id>com.shenhua.idea.plugin.easypost</id>
-  <name>PostMan</name>
-  <version>1.0</version>
-  <vendor email="shenhuanet@126.com" url="http://www.shenhuanet.com">ShenhuaTech</vendor>
+    <id>com.shenhua.idea.plugin.easypost</id>
+    <name>EasyPost</name>
+    <version>1.0</version>
+    <vendor email="shenhuanet@126.com" url="http://www.shenhuanet.com">ShenhuaTech</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       An idea plugin to help you quickly debugging the RESTful API.<br>
     ]]></description>
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
       First release.<br>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="145.0"/>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="EasyPost" icon="/icons/icon_pm_13x13.png" anchor="bottom"
+                    canCloseContents="true"
+                    factoryClass="com.shenhua.idea.plugin.easypost.ui.EasyPostView"/>
+    </extensions>
+    <project-components>
+        <component>
+            <implementation-class>com.shenhua.idea.plugin.easypost.components.EasyPostComponent</implementation-class>
+        </component>
+    </project-components>
 
-  <actions>
-    <!-- Add your actions here -->
-    <action id="MainAction" class="com.shenhua.idea.plugin.easypost.MainAction" text="MainAction"
-            description="MainAction"/>
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+        <action id="MainAction" class="com.shenhua.idea.plugin.easypost.MainAction" text="MainAction"
+                description="MainAction"/>
+
+        <group id="EasyPost.LeftToolbarGroup" popup="false">
+            <action id="EasyPost.AddTabAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.AddTabAction"
+                    text="AddTabAction"
+                    description="Add a new tab content"
+                    icon="/general/add.png">
+            </action>
+            <action id="EasyPost.HistoryAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.HistoryAction"
+                    text="HistoryAction"
+                    description="Show the operating history"
+                    icon="/vcs/history.png">
+            </action>
+        </group>
+
+    </actions>
 
 </idea-plugin>
