@@ -20,8 +20,6 @@ import javax.swing.*;
  */
 public class EasyPostView implements ToolWindowFactory {
 
-    private JPanel mPanel;
-
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
 
@@ -33,7 +31,7 @@ public class EasyPostView implements ToolWindowFactory {
         EasyPostComponent component = EasyPostComponent.get(project);
         ActionToolbar toolbar = component.createToolbar();
         panel.setToolbar(toolbar.getComponent());
-        panel.setContent(content.getComponent());
+//        panel.setContent(content.getComponent());
         content.setCloseable(true);
         toolWindow.getContentManager().addContent(content);
     }

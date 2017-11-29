@@ -32,4 +32,6 @@ public class EasyPostComponent extends AbstractProjectComponent {
         System.out.println("lefttoolbar: " + leftToolbar.toString());
         return leftToolbar;
     }
+
+//    public
 }

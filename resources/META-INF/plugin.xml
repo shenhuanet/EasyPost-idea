@@ -18,9 +18,8 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
+    <!-- uncomment to enable plugin in all products    -->
     <depends>com.intellij.modules.lang</depends>
-    -->
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -46,11 +45,56 @@
                     description="Add a new tab content"
                     icon="/general/add.png">
             </action>
+            <action id="EasyPost.CloseAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.CloseTabAction"
+                    text="CloseAction"
+                    description="Close current tab"
+                    icon="/actions/exclude.png">
+            </action>
             <action id="EasyPost.HistoryAction"
                     class="com.shenhua.idea.plugin.easypost.actions.HistoryAction"
                     text="HistoryAction"
                     description="Show the operating history"
                     icon="/vcs/history.png">
+            </action>
+            <action id="EasyPost.SettingAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.SettingAction"
+                    text="SettingAction"
+                    description="Go to settings"
+                    icon="/general/secondaryGroup.png">
+            </action>
+            <action id="EasyPost.HelpAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.HelpAction"
+                    text="HelpAction"
+                    description="Show the help"
+                    icon="/actions/help.png">
+            </action>
+            <action id="EasyPost.CloseContextAction"
+                    class="com.intellij.execution.ui.layout.actions.CloseViewAction"
+                    text="CloseActiveTabAction"
+                    description="Close the content"
+                    icon="/actions/cancel.png">
+            </action>
+        </group>
+
+        <group id="EasyPost.HistoryGroup" popup="false">
+            <action id="EasyPost.History.RemoveAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.history.RemoveAction"
+                    text="RemoveAction"
+                    description="Remove the selected record"
+                    icon="/actions/exclude.png">
+            </action>
+            <action id="EasyPost.History.CleanAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.history.CleanAction"
+                    text="CleanAction"
+                    description="Clean all the history records"
+                    icon="/actions/gc.png">
+            </action>
+            <action id="EasyPost.History.CloseAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.history.CloseHistoryAction"
+                    text="CloseHistoryAction"
+                    description="Close the history tab"
+                    icon="/actions/cancel.png">
             </action>
         </group>
 
