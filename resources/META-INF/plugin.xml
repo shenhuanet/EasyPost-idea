@@ -24,19 +24,15 @@
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <toolWindow id="EasyPost" icon="/icons/icon_pm_13x13.png" anchor="bottom"
-                    canCloseContents="true"
                     factoryClass="com.shenhua.idea.plugin.easypost.ui.EasyPostView"/>
     </extensions>
     <project-components>
         <component>
-            <implementation-class>com.shenhua.idea.plugin.easypost.components.EasyPostComponent</implementation-class>
+            <implementation-class>com.shenhua.idea.plugin.easypost.EasyPostComponent</implementation-class>
         </component>
     </project-components>
 
     <actions>
-        <!-- Add your actions here -->
-        <action id="MainAction" class="com.shenhua.idea.plugin.easypost.MainAction" text="MainAction"
-                description="MainAction"/>
 
         <group id="EasyPost.LeftToolbarGroup" popup="false">
             <action id="EasyPost.AddTabAction"
@@ -69,8 +65,8 @@
                     description="Show the help"
                     icon="/actions/help.png">
             </action>
-            <action id="EasyPost.CloseContextAction"
-                    class="com.intellij.execution.ui.layout.actions.CloseViewAction"
+            <action id="EasyPost.CloseWindowAction"
+                    class="com.shenhua.idea.plugin.easypost.actions.CloseWindowAction"
                     text="Close Window"
                     description="Close the content window"
                     icon="/actions/cancel.png">
